@@ -83,7 +83,7 @@ struct mainMenu: View {
                                 .font(Font.custom("SF Pro", size: 16).weight(.semibold))
                                 .lineSpacing(22)
                                 .foregroundColor(Color(red: 0.72, green: 0.93, blue: 0.27))
-                                .offset(x: 8, y: 30)
+                                .offset(x: 12, y: 30)
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
