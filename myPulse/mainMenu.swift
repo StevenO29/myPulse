@@ -18,7 +18,7 @@ struct mainMenu: View {
     @State private var showInformation = false
     @State private var minimumRangeHeartRate: Int = 60
     @State private var maximumRangeHeartRate: Int = 100
-    @State private var maximumHeartRate: Int = 100
+    @State private var maximumHeartRate: Int = 220
     @State private var showAlert = false
     @State private var showTimerView = false
     
@@ -160,7 +160,7 @@ struct mainMenu: View {
                     self.userAge = age
                     self.minimumRangeHeartRate = age ?? 60 >= 5 && age ?? 60 <= 12 ? 75 : 60
                     self.maximumRangeHeartRate = age ?? 60 >= 5 && age ?? 60 <= 12 ? 118 : 100
-                    self.maximumHeartRate = age != nil ? 100 - age! : 100
+                    self.maximumHeartRate = age != nil ? 220 - age! : 220
                 }
                 manager.latestHeartRate { heartRate in
                     self.currentHeartRate = heartRate
