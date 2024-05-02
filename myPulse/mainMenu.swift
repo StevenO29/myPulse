@@ -70,12 +70,12 @@ struct mainMenu: View {
                                     title: Text("Maximum Heart Rate Exceeded"),
                                     message: Text("Please continue to Box Breathing"),
                                     primaryButton: .default(Text("OK"), action: {
-                                        self.showInformation = true
+                                        self.showTimerView = true
                                     }),
                                     secondaryButton: .cancel()
                                 )
                             }
-                            .fullScreenCover(isPresented: $showInformation, content: {
+                            .fullScreenCover(isPresented: $showTimerView, content: {
                                 ContentView()
                             })
                         } else {
