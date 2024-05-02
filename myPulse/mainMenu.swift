@@ -13,7 +13,7 @@ struct mainMenu: View {
     @EnvironmentObject var manager: healthData
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    @State private var currentHeartRate: Int = 0
+    @State private var currentHeartRate: Int = 111
     @State private var userAge: Int?
     @State private var showInformation = false
     @State private var minimumRangeHeartRate: Int = 60
@@ -55,7 +55,7 @@ struct mainMenu: View {
                                 .foregroundColor(Color(red: 235/255, green: 76/255, blue: 52/255))
                                 .font(.system(size: 18, weight: .medium))
                         }
-                        .offset(x: 38,y: 24)
+                        .offset(x: 48,y: 24)
                         
                         if currentHeartRate > maximumHeartRate {
                             Button("\(Image(systemName: "exclamationmark.triangle")) Warning!") {
