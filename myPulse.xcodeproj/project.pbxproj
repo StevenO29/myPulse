@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B020F0E52BDE81CF009891EC /* healthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020F0E42BDE81CF009891EC /* healthData.swift */; };
+		B0402B922BDB45D80069F466 /* mainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0402B912BDB45D80069F466 /* mainMenu.swift */; };
+		B0718D3E2BDFE4F600A1A759 /* informationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0718D3D2BDFE4F600A1A759 /* informationView.swift */; };
 		B0D37C762BDA94AE00EAEAAF /* myPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D37C752BDA94AE00EAEAAF /* myPulseApp.swift */; };
 		B0D37C782BDA94AE00EAEAAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D37C772BDA94AE00EAEAAF /* ContentView.swift */; };
 		B0D37C7A2BDA94AE00EAEAAF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D37C792BDA94AE00EAEAAF /* Item.swift */; };
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B020F0E42BDE81CF009891EC /* healthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthData.swift; sourceTree = "<group>"; };
+		B0402B912BDB45D80069F466 /* mainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenu.swift; sourceTree = "<group>"; };
+		B0402B932BDB58380069F466 /* myPulse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myPulse.entitlements; sourceTree = "<group>"; };
+		B0718D3D2BDFE4F600A1A759 /* informationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationView.swift; sourceTree = "<group>"; };
+		B073BA4D2BDF4C2C00AA655F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B0D37C722BDA94AE00EAEAAF /* myPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D37C752BDA94AE00EAEAAF /* myPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myPulseApp.swift; sourceTree = "<group>"; };
 		B0D37C772BDA94AE00EAEAAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,11 +104,16 @@
 		B0D37C742BDA94AE00EAEAAF /* myPulse */ = {
 			isa = PBXGroup;
 			children = (
+				B073BA4D2BDF4C2C00AA655F /* Info.plist */,
+				B0402B932BDB58380069F466 /* myPulse.entitlements */,
 				B0D37C752BDA94AE00EAEAAF /* myPulseApp.swift */,
 				B0D37C772BDA94AE00EAEAAF /* ContentView.swift */,
 				B0D37C792BDA94AE00EAEAAF /* Item.swift */,
 				B0D37C7B2BDA94AE00EAEAAF /* Assets.xcassets */,
 				B0D37C7D2BDA94AE00EAEAAF /* Preview Content */,
+				B0402B912BDB45D80069F466 /* mainMenu.swift */,
+				B020F0E42BDE81CF009891EC /* healthData.swift */,
+				B0718D3D2BDFE4F600A1A759 /* informationView.swift */,
 			);
 			path = myPulse;
 			sourceTree = "<group>";
@@ -261,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0D37C782BDA94AE00EAEAAF /* ContentView.swift in Sources */,
+				B020F0E52BDE81CF009891EC /* healthData.swift in Sources */,
 				B0D37C7A2BDA94AE00EAEAAF /* Item.swift in Sources */,
+				B0718D3E2BDFE4F600A1A759 /* informationView.swift in Sources */,
 				B0D37C762BDA94AE00EAEAAF /* myPulseApp.swift in Sources */,
+				B0402B922BDB45D80069F466 /* mainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +439,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = myPulse/myPulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myPulse/Preview Content\"";
 				DEVELOPMENT_TEAM = 4WSCC5Q69A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myPulse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To know your current Heart Rate";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To know your current Heart Rate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,12 +474,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = myPulse/myPulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myPulse/Preview Content\"";
 				DEVELOPMENT_TEAM = 4WSCC5Q69A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myPulse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "To know your current Heart Rate";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "To know your current Heart Rate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

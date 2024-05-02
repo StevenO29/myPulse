@@ -7,9 +7,12 @@
 
 import SwiftUI
 import SwiftData
+import BackgroundTasks
 
 @main
 struct myPulseApp: App {
+    @StateObject var manager = healthData()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,8 +28,9 @@ struct myPulseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            mainMenu()
         }
         .modelContainer(sharedModelContainer)
+        .environmentObject(manager)
     }
 }
