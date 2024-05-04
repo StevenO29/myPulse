@@ -14,11 +14,15 @@ myPulse is an application for monitoring user heart rate with the help of Apple 
 ## 📲 myPulse Screenshot
 - Main Menu (Normal Heart Rate)
   ![S__5160962_0](https://github.com/StevenO29/myPulse/assets/95264788/2da5243c-1fc8-49b0-b8d9-7d295a8e427e)
+  
 - Main Menu (Maximum Heart Rate Exceeded)
+  Note: The value of the maximum heart rate is changed for example when the heart rate exceeds the limit and displays an alert.
   ![S__5160964_0](https://github.com/StevenO29/myPulse/assets/95264788/f0789519-771c-4cfa-b93e-e14630f3936e)
   ![S__5160965_0](https://github.com/StevenO29/myPulse/assets/95264788/3624ee15-0881-4000-909b-53043f303c6a)
+  
 - Information Page
   ![S__5160966_0](https://github.com/StevenO29/myPulse/assets/95264788/32408c9c-5c85-420a-a6e4-4c2b878177ae)
+  
 - Timer Page
   ![S__5160967_0](https://github.com/StevenO29/myPulse/assets/95264788/7d6c72f9-ff1f-4391-8916-fd07d3e6d52e)
   ![S__5160968_0](https://github.com/StevenO29/myPulse/assets/95264788/612b1dce-2755-4585-a7e7-212f3d19ea11)
