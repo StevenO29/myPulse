@@ -1,7 +1,7 @@
 # myPulse
 
 ## 🎯 Main Goal
-myPulse help user to monitor their heart rate and perform box breathing techniques when it reaches its maximum limit.
+myPulse help user to monitor their heart rate regularly and perform box breathing techniques when it reaches its maximum limit.
 
 ## 📋 Project Description
 myPulse is an application for monitoring user heart rate with the help of Apple Watch. myPulse can determine user normal heart rate range and maximum heart rate limit based on user age. The action taken when the maximum limit is reached is the Box Breathing breathing guide.
