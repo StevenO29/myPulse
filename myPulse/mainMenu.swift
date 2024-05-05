@@ -13,7 +13,7 @@ struct mainMenu: View {
     @EnvironmentObject var manager: healthData
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    @State private var currentHeartRate: Int = 111
+    @State private var currentHeartRate: Int = 0
     @State private var userAge: Int?
     @State private var showInformation = false
     @State private var minimumRangeHeartRate: Int = 60
